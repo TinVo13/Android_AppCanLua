@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NhapSoLieu">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/six"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Cân Lúa"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+            <Button
+                android:layout_toRightOf="@id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/four"
+                android:textColor="@color/black"
+                android:text="Tinh tien"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+    </Toolbar>
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="5"
+        tools:listitem="@layout/gridview_item"
+        android:verticalSpacing="15dp"
+        android:horizontalSpacing="5dp"
+        android:padding="10dp" />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+        <EditText
+            android:id="@+id/etNhap"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Nhập kg lúa"
+            android:textColor="@color/white"
+            android:inputType="numberDecimal"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_edittext"/>
+        <ImageButton
+            android:id="@+id/btnNhap"
+            android:background="@android:color/transparent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_send"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

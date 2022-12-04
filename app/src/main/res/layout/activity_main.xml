@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCanLua"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_taomoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_addchart_24"
+            android:background="@drawable/bg_button"
+            android:text="Tạo mới"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:drawablePadding="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_360"
+            android:background="@drawable/bg_button"
+            android:text="Xem lại"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:drawablePadding="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
